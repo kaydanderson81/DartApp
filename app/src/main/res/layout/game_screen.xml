@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dart1"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:id="@+id/llPlayerOne"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="392dp"
+            android:layout_height="75dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints,UselessParent">
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:radius="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/player1PossibleOuts"
+            android:layout_width="392dp"
+            android:layout_height="75dp"
+            android:visibility="gone"
+            android:text="Your Text Here"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPlayer2"
+            android:layout_width="392dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/containerLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/player2"
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/game2"
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="387dp"
+        android:layout_height="203dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/containerLayout1"
+            android:layout_width="103dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/dart_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:paddingTop="10dp"
+                android:text="@string/dart_1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dart1"
+                android:layout_width="88dp"
+                android:layout_height="80sp"
+                android:background="@drawable/round_button"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:radius="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="30sp"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dart_checkbox"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/dart1BoxDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/dart1BoxTriple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerLayout2"
+            android:layout_width="103dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/dart_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:paddingTop="10dp"
+                android:text="@string/dart_2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dart2"
+                android:layout_width="88dp"
+                android:layout_height="80sp"
+                android:background="@drawable/round_button"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:radius="20dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="30sp"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dart_checkbox"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/dart2BoxDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/dart2BoxTriple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/containerLayout3"
+            android:layout_width="103dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.915"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/dart_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:paddingTop="10dp"
+                android:text="@string/dart_3"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dart3"
+                android:layout_width="88dp"
+                android:layout_height="80sp"
+                android:background="@drawable/round_button"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:radius="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="30sp"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dart_checkbox"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/dart3BoxDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/dart3BoxTriple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dart_checkbox"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="389dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.213"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/addScore"
+            style="@style/ButtonStyle"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:text="Add Score"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

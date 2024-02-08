@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dartRed">#F12752</color>
+    <color name="red">#F34D70</color>
+    <color name="dartGreen">#FF22B17D</color>
+    <color name="grey">#333131</color>
+    <color name="blue">#386991</color>
+    <color name="lightBlue">#2196F3</color>
+</resources>

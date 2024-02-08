@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dart1"
+    tools:context=".service.UpdatePlayer">
+
+    <Spinner
+        android:id="@+id/spPlayerList"
+        android:layout_width="355dp"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etUpdateName"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275"
+        tools:ignore="LabelFor" />
+
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="87dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnUpdateData"
+                android:layout_width="60dp"
+                android:layout_height="56dp"
+                android:background="@drawable/round_button"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="@color/lightBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.475"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvAddPlayerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="87dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnBackToAddPlayer"
+                android:layout_width="60dp"
+                android:layout_height="56dp"
+                android:background="@drawable/round_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.475"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                tools:ignore="MissingConstraints"
+                app:tint="@color/red"/>
+
+            <TextView
+                android:id="@+id/tvBackButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFavDoubles"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:text="@string/favourite_doubles"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <EditText
+        android:id="@+id/etUpdateFavDoubles"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        tools:ignore="LabelFor" />
+
+    <!--    <ImageButton-->
+<!--        android:id="@+id/btnCancel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@android:drawable/ic_menu_close_clear_cancel"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.247"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.411"-->
+<!--        tools:ignore="ContentDescription,MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/tvUpdatePlayer"
+        android:layout_width="387dp"
+        android:layout_height="88dp"
+        android:paddingTop="20dp"
+        android:text="@string/update_player"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
